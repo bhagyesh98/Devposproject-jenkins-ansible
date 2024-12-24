@@ -1,0 +1,6 @@
+- hosts: all 
+  tasks: 
+   - name: deploying the artifact 
+      copy: 
+        src: /var/lib/jenkins/workspace/pipeline/target/NETFLIX1.2.2.war 
+        dest: /root/tomcat/webapps
